@@ -1,5 +1,4 @@
-## The following function works for caching the inverse of a matrix  in matrix 
-## inversion procedure
+## The following function works for caching the inverse of a matrix  
 
 ## Function makeCacheMatrix does the following....
 ## set the value of the matrix which is specified in the procedure 
@@ -11,7 +10,7 @@ makeCacheMatrix <- function(x = matrix()) {
         inv<-NULL
         set<-function(y){
                 x <<- y
-                inv <<- inv
+                inv <<- NULL
         }
         get <- function() x
         setsolve <- function(solve) inv <<- solve
